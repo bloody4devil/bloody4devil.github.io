@@ -43,12 +43,12 @@ body {
 
 .letter-overlay.green {
     color: #34A853;
-    clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
+    clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
 }
 
 .letter-overlay.yellow {
     color: #FBBC05;
-    clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+    clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
 }
 
 .logo > span:nth-child(6) {
