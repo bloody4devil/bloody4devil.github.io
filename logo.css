@@ -31,14 +31,14 @@ body {
     left: 0;
 }
 
-.letter-overlay.blue {
-    color: #4285F4;
-    clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
-}
-
 .letter-overlay.red {
     color: #EA4335;
     clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
+}
+
+.letter-overlay.blue {
+    color: #4285F4;
+    clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
 }
 
 .letter-overlay.green {
