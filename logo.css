@@ -41,13 +41,13 @@ body {
     clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
 }
 
-.letter-overlay.yellow {
-    color: #FBBC05;
+.letter-overlay.green {
+    color: #34A853;
     clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
 }
 
-.letter-overlay.green {
-    color: #34A853;
+.letter-overlay.yellow {
+    color: #FBBC05;
     clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
 }
 
