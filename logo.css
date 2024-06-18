@@ -14,38 +14,43 @@ body {
     font-weight: bold;
 }
 
+.letter, .letter-overlay {
+    display: inline-block;
+    position: relative;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
 .letter {
     color: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .letter-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    font-size: inherit;
-    font-weight: inherit;
-    clip-path: inset(0);
 }
 
-.blue {
+.letter-overlay.blue {
     color: #4285F4;
     clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
 }
 
-.red {
+.letter-overlay.red {
     color: #EA4335;
     clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
 }
 
-.yellow {
+.letter-overlay.yellow {
     color: #FBBC05;
     clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
 }
 
-.green {
+.letter-overlay.green {
     color: #34A853;
     clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+}
+
+.logo > span:nth-child(6) {
+    margin-left: 0.1em; /* Adjust spacing between the two "S" letters if needed */
 }
