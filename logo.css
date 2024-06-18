@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    position: relative;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.letter {
+    color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.letter-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    clip-path: inset(0);
+}
+
+.blue {
+    color: #4285F4;
+    clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
+}
+
+.red {
+    color: #EA4335;
+    clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
+}
+
+.yellow {
+    color: #FBBC05;
+    clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
+}
+
+.green {
+    color: #34A853;
+    clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+}
