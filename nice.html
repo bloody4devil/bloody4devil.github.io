@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyScript Calculator</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .calculator {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            width: 50px;
+            margin: 5px;
+        }
+        button {
+            padding: 5px 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="calculator">
+    <h2>Simple Calculator</h2>
+    <input type="number" id="num1" placeholder="First number">
+    <input type="number" id="num2" placeholder="Second number">
+    
+    <br>
+
+    <button onclick="calculate('add')">Add</button>
+    <button onclick="calculate('subtract')">Subtract</button>
+    <button onclick="calculate('multiply')">Multiply</button>
+    <button onclick="calculate('divide')">Divide</button>
+    
+    <div class="result">
+        <h3>Result:</h3>
+        <py-script id="result"></py-script>
+    </div>
+</div>
+
+<py-script>
+    def calculate(operation):
+        num1 = float(Element("num1").value)
+        num2 = float(Element("num2").value)
+        
+        if operation == 'add':
+            result = num1 + num2
+        elif operation == 'subtract':
+            result = num1 - num2
+        elif operation == 'multiply':
+            result = num1 * num2
+        elif operation == 'divide':
+            if num2 != 0:
+                result = num1 / num2
+            else:
+                result = "Error! Division by zero."
+        
+        Element("result").write(result)
+</py-script>
+
+</body>
+</html>
